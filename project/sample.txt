@@ -1,0 +1,15 @@
+import requests
+
+url = "http://127.0.0.1:8001/upload_document/"
+file_path = "sample.txt"
+
+with open(file_path, "r") as file:
+    content = file.read()
+
+data = {
+    "filename": "sample.txt",
+    "content": content
+}
+
+response = requests.post(url, json=data)
+print(response.json())

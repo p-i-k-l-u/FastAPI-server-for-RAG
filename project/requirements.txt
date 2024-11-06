@@ -1,0 +1,8 @@
+
+
+fastapi[all]
+chromadb
+sentence-transformers
+PyPDF2
+python-docx
+uvicorn
